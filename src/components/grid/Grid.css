@@ -1,0 +1,58 @@
+.container__grid{
+    width: 100%;
+}
+.grid__countries > div{
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.353);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.grid__countries{
+    width: 90%;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 400px;
+    gap: 10px;
+    padding: 10px;
+}
+.country__image{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 100%;
+    height: 50%;
+    max-height: 50%;
+}
+.country__data{
+    margin-top: 20px;
+    padding: 0px 12px;
+}
+.country__data > h3{
+    margin-bottom: 20px;
+}
+.country__data > p{
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+.country__data > p >span{
+    padding-left: 2px;
+    font-weight: 100;
+}
+
+@media screen and (min-width:640px) {
+    .grid__countries{
+    grid-template-columns: repeat(3,1fr);
+
+    }
+}
+@media screen and (min-width:903px) {
+    .grid__countries{
+        grid-template-columns: repeat(4,1fr);
+        max-height: 500px;
+    }
+}
+

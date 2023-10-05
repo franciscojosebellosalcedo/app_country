@@ -1,0 +1,99 @@
+.container__details{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.details{
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+}
+.details__back{
+    padding: 5px 5px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.353);
+    color: rgba(0, 0, 0, 0.727);
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icon__back{
+    font-size: 20px;
+}
+.details__data{
+    margin-top: 60px;
+}
+.details__imagen{
+    width: 100%;
+    object-fit: cover;
+}
+.details__info{
+    margin-top: 30px;
+}
+.details__info__text{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.details__info__text >div > p{
+    margin-bottom: 7px;
+    color: rgba(0, 0, 0, 0.812);
+    font-weight: bold;
+
+}
+.details__info__text > div> p >span{
+    padding-left: 4px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.777);
+}
+.details__data__borders{
+    margin-top: 40px;
+}
+.details__name{
+    font-size: 25px;
+}
+.borders__title{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.816);
+    margin-bottom: 20px;
+}
+.borders{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    grid-auto-rows: 30px;
+}
+.borders > div{
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.353);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+@media screen and (min-width:850px) {
+    .details__data{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .details__imagen{
+        width: 40%;
+        height: 100%;
+    }
+    .details__info__text{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .details__info{
+        margin-top: 0px;
+        width: 50%;
+    }
+}
